@@ -362,7 +362,8 @@ header {
 	height: 100%;
 }
 
-.clients-item__link:hover {
+.clients-item__link:hover,
+.clients-item__link:focus {
 	color: var(--brandblue);
 }
 
