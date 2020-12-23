@@ -31,6 +31,13 @@ body {
 	color: var(--darktext);
 }
 
+img,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 address {
 	font-style: normal;
 	font-weight: 400;
@@ -97,6 +104,9 @@ header {
 	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+
+.nav-link {
 	color: var(--darktext);
 }
 
@@ -212,7 +222,7 @@ header {
 	display: block;
 	width: 100%;
 	height: 120px;
-	background: #f5f4fa;
+	background: var(--bglight);
 	border-radius: 4px;
 	margin-bottom: 30px;
 	background-position: center;
@@ -335,7 +345,6 @@ header {
 
 .socials-list__icon {
 	width: 20px;
-	height: 20px;
 }
 
 .clients-list {
@@ -350,6 +359,11 @@ header {
 	height: 90px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+	border-color: var(--brandblue);
 }
 
 .clients-item:not(:last-child) {
